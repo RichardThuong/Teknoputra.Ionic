@@ -21,6 +21,10 @@
     "settings": "Settings"
     "customPosts": "Custom posts"
     "customTaxonomy": "Custom Taxonomy"
+    "userAccount": "User Account"
+    "accountInfo": "My Account"
+    "signout": "Sign out"
+    "others": "Others"
 "pushNotifications":
     "newContent":
         "title": "New content!"
