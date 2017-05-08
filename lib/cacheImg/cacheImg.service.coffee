@@ -1,4 +1,4 @@
-module.exports = angular.module 'wordpress-hybrid-client.cacheImg'
+module.exports = angular.module 'Teknoputra.Ionic.cacheImg'
     .service '$WPHCCacheImg', ($q, $WPHCConfig, $log) ->
         initialised = false
         init: ->

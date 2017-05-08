@@ -1,4 +1,4 @@
-module.exports = angular.module 'wordpress-hybrid-client.init'
+module.exports = angular.module 'Teknoputra.Ionic.init'
     .service '$WPHCInit', ($q, $WPHCConfig, $log, $WPHCCacheImg) ->
         init: ->
             promises = []

@@ -1,3 +1,3 @@
-module.exports = angular.module 'wordpress-hybrid-client.init', []
+module.exports = angular.module 'Teknoputra.Ionic.init', []
 
 require "./init.service.coffee"

@@ -14,10 +14,10 @@ If you are running linux you might need to install all of the following dependen
 ## Clone repository
 
 ```
-$ git clone https://github.com/shprink/wordpress-hybrid-client.git
+$ git clone https://github.com/RichardThuong/Teknoputra.Ionic.git
 
 # Open the project folder
-$ cd wordpress-hybrid-client
+$ cd Teknoputra.Ionic
 
 # List all versions
 $ git tag

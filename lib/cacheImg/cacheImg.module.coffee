@@ -1,6 +1,6 @@
 require 'imgcache.js'
 
-module.exports = angular.module 'wordpress-hybrid-client.cacheImg', []
+module.exports = angular.module 'Teknoputra.Ionic.cacheImg', []
 
 require "./cacheImg.directive.coffee"
 require "./cacheImg.service.coffee"

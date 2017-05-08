@@ -1,4 +1,4 @@
-module.exports = angular.module 'wordpress-hybrid-client.analytics'
+module.exports = angular.module 'Teknoputra.Ionic.analytics'
     .config ($WPHCConfig, $analyticsProvider) ->
         if !$WPHCConfig.analytics.enabled or !$WPHCConfig.analytics.trackingId
             return

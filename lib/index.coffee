@@ -32,10 +32,10 @@ pushNotificationsModule = require './pushNotifications/index.js';
 # Style entry point
 require './scss/bootstrap'
 
-module.exports = app = angular.module 'wordpress-hybrid-client', [
+module.exports = app = angular.module 'Teknoputra.Ionic', [
     'ionic'
     'ngIOS9UIWebViewPatch'
-    'wordpress-hybrid-client.config'
+    'Teknoputra.Ionic.config'
     'ui.router'
     'wp-api-angularjs'
     'angular-cache'

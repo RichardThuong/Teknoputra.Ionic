@@ -7,7 +7,7 @@ import './icons/icon_168.png';
 import './icons/icon_192.png';
 import '!file?name=[name].[ext]!./manifest.json';
 
-let mod = angular.module('wordpress-hybrid-client.overwriteModule', [
+let mod = angular.module('Teknoputra.Ionic.overwriteModule', [
     templates
 ]);
 

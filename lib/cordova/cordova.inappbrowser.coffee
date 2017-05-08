@@ -1,4 +1,4 @@
-module.exports = angular.module 'wordpress-hybrid-client.cordova'
+module.exports = angular.module 'Teknoputra.Ionic.cordova'
     .config ($cordovaInAppBrowserProvider) ->
         defaultOptions =
             location: 'no',

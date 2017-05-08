@@ -1,3 +1,3 @@
-module.exports = angular.module('wordpress-hybrid-client.syntaxHighlighter')
+module.exports = angular.module('Teknoputra.Ionic.syntaxHighlighter')
     .config ($WPHCConfig, hljsServiceProvider) ->
         hljsServiceProvider.setOptions $WPHCConfig.syntaxHighlighter

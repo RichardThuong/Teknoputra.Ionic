@@ -1,4 +1,4 @@
-module.exports = angular.module 'wordpress-hybrid-client.cordova'
+module.exports = angular.module 'Teknoputra.Ionic.cordova'
     .factory '$WPHCSocialSharing', ($log, $WPHCConfig, $ionicPlatform, $cordovaSocialSharing, $cordovaToast, $filter, $window) ->
         $log.info 'cordova socialsharing'
 

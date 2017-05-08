@@ -1,8 +1,8 @@
 {
-  "name": "wordpress-hybrid-client",
+  "name": "teknoputra-client",
   "version": "2.0.0",
-  "title": "wordpress-hybrid-client",
-  "description": "Build amazing iOS and Android applications for your WordPress website for free!",
+  "title": "teknoputra-client",
+  "description": "Teknoputra ionic application for android and ios",
   "main": "index.js",
   "scripts": {
     "build": "bash ./release.sh",
@@ -33,16 +33,16 @@
     "material design",
     "client"
   ],
-  "author": "Julien Renaux <contact@julienrenaux.fr>",
+  "author": "Thuong Nguyen Huy <thuong@me.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shprink/wordpress-hybrid-client"
+    "url": "https://github.com/RichardThuong/Teknoputra.Ionic"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shprink/wordpress-hybrid-client/issues"
+    "url": "https://github.com/RichardThuong/Teknoputra.Ionic"
   },
-  "homepage": "http://wphc.julienrenaux.fr/",
+  "homepage": "http://www.teknoputra.com",
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
     "babel": "^5.8.23",

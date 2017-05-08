@@ -32,7 +32,7 @@ Open ```platforms/android/AndroidManifest.xml``` and change ```android:windowSof
 npm run build
 ```
 
-Then answer to the prompt. When you are done, you should have your `.apk` files dumped into the `build` folder at the project root: https://github.com/shprink/wordpress-hybrid-client/tree/develop/build
+Then answer to the prompt. When you are done, you should have your `.apk` files dumped into the `build` folder at the project root: https://github.com/RichardThuong/Teknoputra.Ionic/tree/develop/build
 
 ## iOS
 

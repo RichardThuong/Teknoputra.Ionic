@@ -1,4 +1,4 @@
-module.exports = angular.module 'wordpress-hybrid-client.cacheImg'
+module.exports = angular.module 'Teknoputra.Ionic.cacheImg'
     .run ($ionicPlatform, $log, $WPHCConfig) ->
         ImgCache.options.debug = if IS_PROD then false else true
         ImgCache.options.chromeQuota = $WPHCConfig.cache.img.chromeQuota;

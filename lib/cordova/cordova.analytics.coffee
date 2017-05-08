@@ -1,4 +1,4 @@
-module.exports = angular.module 'wordpress-hybrid-client.cordova'
+module.exports = angular.module 'Teknoputra.Ionic.cordova'
     .run ($rootScope, $log, $WPHCConfig, $cordovaGoogleAnalytics, $ionicPlatform, $location) ->
         $log.info 'cordova analytics'
 

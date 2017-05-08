@@ -1,4 +1,4 @@
-let mod = angular.module('wordpress-hybrid-client.overwriteTemplates', []);
+let mod = angular.module('Teknoputra.Ionic.overwriteTemplates', []);
 
 mod.run(($templateCache) => {
     // customPosts

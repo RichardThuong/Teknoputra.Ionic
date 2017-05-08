@@ -1,4 +1,4 @@
-module.exports = angular.module 'wordpress-hybrid-client.cordova'
+module.exports = angular.module 'Teknoputra.Ionic.cordova'
     .config ($cordovaAppRateProvider, $WPHCConfig) ->
         if !_.get $WPHCConfig, 'cordova.appRate.enabled'
             return

@@ -1,4 +1,4 @@
-module.exports = angular.module 'wordpress-hybrid-client.syntaxHighlighter'
+module.exports = angular.module 'Teknoputra.Ionic.syntaxHighlighter'
     .filter 'highlight', ->
         return (text) ->
             element = angular.element '<div></div>'
