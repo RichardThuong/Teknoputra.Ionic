@@ -50,7 +50,7 @@
     "externalLinkOptions": null # default: 'location=yes'
     "defaultState":
         "state": "public.taxonomies.id"
-        "params": { term: 'categories', id: 25, postType: 'post' }
+        "params": { term: 'categories', id: 25, postType: 'post', title: 'Home' }
     "exposeAsideWhen": "(min-width:900px)"
     "displayIcon": true # uses config/icons/icon_48.png
 

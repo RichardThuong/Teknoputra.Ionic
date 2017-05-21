@@ -27,7 +27,8 @@ menuModule = require './menu/index.js'
 bookmarkModule = require './bookmark/index.js'
 accessibilityModule = require './accessibility/index.js'
 loadingModule = require './loading/index.js'
-pushNotificationsModule = require './pushNotifications/index.js';
+pushNotificationsModule = require './pushNotifications/index.js'
+loginModule = require './login/index.js';
 
 # Style entry point
 require './scss/bootstrap'
@@ -61,6 +62,7 @@ module.exports = app = angular.module 'Teknoputra.Ionic', [
     templatesModule
     overwriteModule
     pushNotificationsModule
+    loginModule
 ]
 
 app.config ($stateProvider, $urlRouterProvider) ->

@@ -2,31 +2,31 @@
     {
         "type": "internal",
         "trans": "Home",
-        "route": "public.taxonomies.id({ term: 'categories', id: 25, postType: 'post' })",
+        "route": "public.taxonomies.id({ term: 'categories', id: 25, postType: 'post', title: 'Home' })",
         "icon": "icon ion-home"
     },
     {
         "type": "internal",
         "trans": "About us",
-        "route": "public.taxonomies.id({ term: 'categories', id: 26, postType: 'post' })",
+        "route": "public.taxonomies.id({ term: 'categories', id: 26, postType: 'post', title: 'About Us' })",
         "icon": "icon ion-information-circled"
     },
     {
         "type": "internal",
         "trans": "What we do",
-        "route": "public.taxonomies.id({ term: 'categories', id: 27, postType: 'post' })",
+        "route": "public.taxonomies.id({ term: 'categories', id: 27, postType: 'post', title: 'What We Do' })",
         "icon": "icon ion-help-circled"
     },
     {
         "type": "internal",
         "trans": "Resources",
-        "route": "public.taxonomies.id({ term: 'categories', id: 28, postType: 'post' })",
+        "route": "public.taxonomies.id({ term: 'categories', id: 28, postType: 'post', title: 'Resources' })",
         "icon": "icon ion-archive"
     },
     {
         "type": "internal",
         "trans": "Contact",
-        "route": "public.taxonomies.id({ term: 'categories', id: 29, postType: 'post' })",
+        "route": "public.taxonomies.id({ term: 'categories', id: 29, postType: 'post', title: 'Contact' })",
         "icon": "icon ion-email"
     },
     {
@@ -93,7 +93,7 @@
     {
         "type": "internal",
         "trans": "menu.signout",
-        "route": "public.bookmarks",
+        "route": "public.login",
         "icon": "icon ion-android-exit"
     }
 ]
