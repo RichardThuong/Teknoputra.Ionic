@@ -30,19 +30,7 @@
         {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
         <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
         {% } %}
-        <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-        <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyA2g0sB9hnSkSJ6T4ojpvv1-_OYyqW7W6Y",
-            authDomain: "teknoputra-cd8bb.firebaseapp.com",
-            databaseURL: "https://teknoputra-cd8bb.firebaseio.com",
-            projectId: "teknoputra-cd8bb",
-            storageBucket: "teknoputra-cd8bb.appspot.com",
-            messagingSenderId: "1040704240201"
-        };
-        firebase.initializeApp(config);
-        </script>
+        <!--<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>-->
     </body>
     <!-- {%= o.htmlWebpackPlugin.options.pkg.name + ' v' + o.htmlWebpackPlugin.options.pkg.version + ' built on ' + new Date() %} -->
 

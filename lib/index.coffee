@@ -28,7 +28,7 @@ bookmarkModule = require './bookmark/index.js'
 accessibilityModule = require './accessibility/index.js'
 loadingModule = require './loading/index.js'
 pushNotificationsModule = require './pushNotifications/index.js'
-loginModule = require './login/index.js';
+loginModule = require './login/index.js'
 
 # Style entry point
 require './scss/bootstrap'
