@@ -1,20 +1,21 @@
-<ion-view view-title="Login">
+<ion-view view-title="Login" hide-nav-bar="true">
     <ion-content>
         <div class="pageTitle">Teknoputra</div>
-        <ion-list>
-            <ion-item>
-                <input type="text" placeholder="Username"></ion-input>
-            </ion-item>
-
-            <ion-item>
-                <input type="password" placeholder="Password"></ion-input>
-            </ion-item>
-        </ion-list>
-        <div class="login-pannel">
-            <button class="button button-full button-primary">Login</button>
-            <button class="button button-full button-secondary">Signup</button>
-        </div>
-        <div class="social-login-pannel">
+        <form ng-submit="doLogin(user)">
+            <div class="list">
+                <label class="item item-input">
+                    <input type="text" placeholder="Email" ng-model="user.email">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Password" ng-model="user.password">
+                </label>
+            </div>
+            <div class="padding">
+                <button type="submit" class="button button-block button-positive">Login</button>
+            </div>
+        <form>
+        <div class="padding">
+            <a class="button button-block button-balanced" ng-click="goHome()">Signup</a>
             <label>Or you can connect with:</label>
             <button class="button facebook-login-button button-small icon-left ion-social-facebook">Facebook</button>
             <button class="button google-login-button button-small icon-left ion-social-google">Google</button>

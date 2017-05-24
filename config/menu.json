@@ -93,7 +93,7 @@
     {
         "type": "internal",
         "trans": "menu.signout",
-        "route": "public.login",
+        "route": "public.logout",
         "icon": "icon ion-android-exit"
     }
 ]

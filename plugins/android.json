@@ -8,49 +8,49 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-globalization": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "org.pushandplay.cordova.apprate": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "nl.x-services.plugins.toast": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-google-analytics": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "phonegap-plugin-push": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-crosswalk-webview": {
             "XWALK_VERSION": "22+",
@@ -58,24 +58,24 @@
             "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
             "XWALK_MODE": "embedded",
             "XWALK_MULTIPLEAPK": "true",
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-spinner-dialog": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-admobpro": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "cordova-plugin-x-socialsharing": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         },
         "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-extension": {
-            "PACKAGE_NAME": "com.YourDomain.YourAppName"
+            "PACKAGE_NAME": "com.thuongnh.teknoputra"
         }
     }
 }
