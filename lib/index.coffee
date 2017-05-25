@@ -29,6 +29,7 @@ accessibilityModule = require './accessibility/index.js'
 loadingModule = require './loading/index.js'
 pushNotificationsModule = require './pushNotifications/index.js'
 loginModule = require './login/index.js'
+authService = require './auth/index.js'
 
 # Style entry point
 require './scss/bootstrap'
@@ -41,6 +42,7 @@ module.exports = app = angular.module 'Teknoputra.Ionic', [
     'wp-api-angularjs'
     'angular-cache'
     'angularMoment'
+    'ngCordova'
     customPostsModule
     filtersModule
     pagesModule
@@ -63,6 +65,7 @@ module.exports = app = angular.module 'Teknoputra.Ionic', [
     overwriteModule
     pushNotificationsModule
     loginModule
+    authService
 ]
 
 app.config ($stateProvider, $urlRouterProvider) ->
@@ -135,7 +138,7 @@ app.controller 'WPHCMainController' , ($log, $WPHCConfig) ->
 ###
 RUN
 ###
-app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $ionicPlatform, $WPHCAccessibility, $cordovaSplashscreen, $WPHCInit) ->
+app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $ionicPlatform, $WPHCAccessibility, $cordovaSplashscreen, $WPHCInit, $AuthService, $state) ->
     'ngInject';
     $rootScope.appLoaded = undefined
     stateChangeTimeout = null
@@ -145,6 +148,8 @@ app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $i
             $log.info '$stateNotFound', unfoundState
         $rootScope.$on '$stateChangeError', (event, toState, toParams, fromState, fromParams, error) ->
             $log.info '$stateChangeError', error
+
+    $AuthService.initFirebase()
 
     $WPHCAccessibility.updateBodyClass()
     
@@ -166,6 +171,11 @@ app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $i
                 $translate.use $WPHCLanguage.getLocale()
             else
                 $cordovaSplashscreen.hide()
+            
+            # Redirect to login screen if user have not logged in
+            if !$AuthService.isUserLoggedIn()
+                console.log('User is not logged in.');
+                $state.go("public.login", {}, {reload: true});
 
     # Clean up appLoading
     # angular.element(document.querySelector 'html').removeClass 'app-loading'
