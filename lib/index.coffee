@@ -30,6 +30,7 @@ loadingModule = require './loading/index.js'
 pushNotificationsModule = require './pushNotifications/index.js'
 loginModule = require './login/index.js'
 authService = require './auth/index.js'
+toastModule = require './toastNotification/index.js'
 
 # Style entry point
 require './scss/bootstrap'
@@ -66,6 +67,7 @@ module.exports = app = angular.module 'Teknoputra.Ionic', [
     pushNotificationsModule
     loginModule
     authService
+    toastModule
 ]
 
 app.config ($stateProvider, $urlRouterProvider) ->

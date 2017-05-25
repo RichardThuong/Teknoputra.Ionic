@@ -12,13 +12,10 @@
             </div>
             <div class="padding">
                 <button type="submit" class="button button-block button-positive">Login</button>
+                <a class="button button-block facebook-login-button icon-left ion-social-facebook" ng-click="loginWithFacebook()">Login With Facebook</a>
+                <a class="button button-block google-login-button icon-left ion-social-google" ng-click="loginWithGoogle()">Login With Google</button>
+                <a class="button button-block" ng-click="goSignup()">Signup New Account</a>
             </div>
         <form>
-        <div class="padding">
-            <a class="button button-block button-balanced" ng-click="goHome()">Don't have an account yet? Sign up here</a>
-            <label>Or login with:</label>
-            <button class="button facebook-login-button button-small icon-left ion-social-facebook">Facebook</button>
-            <button class="button google-login-button button-small icon-left ion-social-google">Google</button>
-        </div>
     </ion-content>
 </ion-view>

@@ -1,0 +1,25 @@
+<ion-view view-title="Signup" hide-nav-bar="true">
+    <ion-content>
+        <div class="pageTitle">Teknoputra</div>
+        <form ng-submit="doSignup(user)">
+            <div class="list">
+                <label class="item item-input">
+                    <input type="text" placeholder="Name" ng-model="user.displayName">
+                </label>
+                <label class="item item-input">
+                    <input type="text" placeholder="Email" ng-model="user.email">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Password" ng-model="user.password">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Confirm password" ng-model="user.confirmPassword">
+                </label>
+            </div>
+            <div class="padding" style="float: right;">
+                <button type="submit" class="button button-inline button-positive">Signup</button>
+                <a class="button button-inline" ng-click="goLogin()">Cancel</a>
+            </div>
+        <form>
+    </ion-content>
+</ion-view>
