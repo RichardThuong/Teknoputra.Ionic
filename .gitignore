@@ -1,0 +1,13 @@
+*~
+*.log
+.sass-cache/
+node_modules/
+/platforms/
+/plugins/
+/www/
+
+# Not sure about the following, but my IDE flags them as "not used"
+*.sw[mnpcod]
+*.tmp
+*.tmp.*
+log.txt
