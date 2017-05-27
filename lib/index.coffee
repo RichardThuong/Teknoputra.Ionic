@@ -131,7 +131,7 @@ app.controller 'WPHCMainController' , ($log, $WPHCConfig) ->
 
     vm = @
     vm.exposeAsideWhen = _.get($WPHCConfig, 'menu.exposeAsideWhen') || 'large'
-    vm.appVersion = wordpressHybridClient.version || null
+    vm.appVersion = teknoputraClient.version || null
     vm.appConfig = $WPHCConfig
     vm.appTitle = vm.appConfig.title || null
     vm.displayIcon = vm.appConfig.menu.displayIcon
