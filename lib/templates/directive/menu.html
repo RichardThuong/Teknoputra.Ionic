@@ -8,7 +8,7 @@
                 <v-pane-content></v-pane-content>
             </v-pane>
             <v-pane ng-if="item.type == 'internal'">
-                <v-pane-header class="item" ng-class="::{'item-icon-left': item.icon}" menu-close ui-sref="{{::item.route}}" ui-sref-active-eq="active">
+                <v-pane-header class="item" ng-class="::{'item-icon-left': item.icon}" menu-close ui-sref="{{::item.route || false}}" ui-sref-active-eq="active">
                     <i class="{{::item.icon}}" ng-if="::item.icon"></i> {{item.trans | translate}}
                 </v-pane-header>
                 <v-pane-content></v-pane-content>

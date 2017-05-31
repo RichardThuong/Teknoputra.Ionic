@@ -51,7 +51,7 @@
     "defaultState":
         "state": "public.taxonomies.id"
         "params": { term: 'categories', id: 25, postType: 'post', title: 'Home' }
-    "exposeAsideWhen": "(min-width:900px)"
+    "exposeAsideWhen": "(min-width:9000px)"
     "displayIcon": true # uses config/icons/icon_48.png
 
 # SETTINGS PAGE

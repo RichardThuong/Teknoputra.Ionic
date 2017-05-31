@@ -30,6 +30,7 @@ loadingModule = require './loading/index.js'
 pushNotificationsModule = require './pushNotifications/index.js'
 loginModule = require './login/index.js'
 authService = require './auth/index.js'
+facebookService = require './facebook/index.js'
 toastModule = require './toastNotification/index.js'
 
 # Style entry point
@@ -67,6 +68,7 @@ module.exports = app = angular.module 'Teknoputra.Ionic', [
     pushNotificationsModule
     loginModule
     authService
+    facebookService
     toastModule
 ]
 
@@ -140,7 +142,7 @@ app.controller 'WPHCMainController' , ($log, $WPHCConfig) ->
 ###
 RUN
 ###
-app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $ionicPlatform, $WPHCAccessibility, $cordovaSplashscreen, $WPHCInit, $AuthService, $state) ->
+app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $ionicPlatform, $WPHCAccessibility, $cordovaSplashscreen, $WPHCInit, $AuthService, $state, $FacebookService) ->
     'ngInject';
     $rootScope.appLoaded = undefined
     stateChangeTimeout = null
@@ -173,11 +175,36 @@ app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $i
                 $translate.use $WPHCLanguage.getLocale()
             else
                 $cordovaSplashscreen.hide()
-            
+                
             # Redirect to login screen if user have not logged in
             if !$AuthService.isUserLoggedIn()
                 console.log('User is not logged in.');
                 $state.go("public.login", {}, {reload: true});
+            else
+                console.log('User is logged in.');
+                $state.go("public.taxonomies.id", { term: 'categories', id: 25, postType: 'post', title: 'Home' }, {reload: true});
+
+            # NativeStorage.getItem('user').then (data) ->
+            #     debugger;
+            #     console.log('User is logged in.')
+            #     console.log(data)
+            #     $state.go("public.taxonomies.id", { term: 'categories', id: 25, postType: 'post', title: 'Home' }, {reload: true})
+            # , (err) ->
+            #     debugger;
+            #     console.log('User is not logged in.')
+
+            # Check if user logged in
+            # NativeStorage.getItem('user').then (data) ->
+            #     console.log('User is logged in.');
+            # , (err) ->
+            #     console.log('User is not logged in.');
+
+            # if NativeStorage.getItem('user')
+            #     console.log('User is logged in.');
+            #     console.log(NativeStorage.getItem('user'))
+            #     $state.go("public.taxonomies.id", { term: 'categories', id: 25, postType: 'post', title: 'Home' }, {reload: true})
+            # else
+            #     $state.go("public.login", {}, {reload: true})
 
     # Clean up appLoading
     # angular.element(document.querySelector 'html').removeClass 'app-loading'
