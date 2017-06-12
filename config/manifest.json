@@ -1,7 +1,7 @@
 {
-    "name": "Your App Name (45 characters max)",
-    "short_name": "Your App",
-    "description": "Your App description",
+    "name": "Teknoputra",
+    "short_name": "Teknoputra",
+    "description": "Teknoputra - Center of Exellence",
     "default_locale": "en",
     "start_url": "index.html",
     "display": "standalone",

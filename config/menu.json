@@ -87,7 +87,7 @@
     {
         "type": "internal",
         "trans": "menu.accountInfo",
-        "href": "public.bookmarks",
+        "route": "public.profile",
         "icon": "icon ion-person"
     },
     {

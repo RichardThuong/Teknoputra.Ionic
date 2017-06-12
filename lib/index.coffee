@@ -32,6 +32,7 @@ loginModule = require './login/index.js'
 authService = require './auth/index.js'
 facebookService = require './facebook/index.js'
 toastModule = require './toastNotification/index.js'
+ngStorage = require 'ngstorage/ngStorage.js'
 
 # Style entry point
 require './scss/bootstrap'
@@ -45,6 +46,7 @@ module.exports = app = angular.module 'Teknoputra.Ionic', [
     'angular-cache'
     'angularMoment'
     'ngCordova'
+    'ngStorage'
     customPostsModule
     filtersModule
     pagesModule
@@ -142,7 +144,7 @@ app.controller 'WPHCMainController' , ($log, $WPHCConfig) ->
 ###
 RUN
 ###
-app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $ionicPlatform, $WPHCAccessibility, $cordovaSplashscreen, $WPHCInit, $AuthService, $state, $FacebookService) ->
+app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $ionicPlatform, $WPHCAccessibility, $cordovaSplashscreen, $WPHCInit, $AuthService, $state, $FacebookService, $localStorage) ->
     'ngInject';
     $rootScope.appLoaded = undefined
     stateChangeTimeout = null
@@ -154,7 +156,6 @@ app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $i
             $log.info '$stateChangeError', error
 
     $AuthService.initFirebase()
-
     $WPHCAccessibility.updateBodyClass()
     
     $rootScope.$on '$stateChangeSuccess', (event, toState, toParams, fromState, fromParams) ->
@@ -183,21 +184,6 @@ app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $i
             else
                 console.log('User is logged in.');
                 $state.go("public.taxonomies.id", { term: 'categories', id: 25, postType: 'post', title: 'Home' }, {reload: true});
-
-            # NativeStorage.getItem('user').then (data) ->
-            #     debugger;
-            #     console.log('User is logged in.')
-            #     console.log(data)
-            #     $state.go("public.taxonomies.id", { term: 'categories', id: 25, postType: 'post', title: 'Home' }, {reload: true})
-            # , (err) ->
-            #     debugger;
-            #     console.log('User is not logged in.')
-
-            # Check if user logged in
-            # NativeStorage.getItem('user').then (data) ->
-            #     console.log('User is logged in.');
-            # , (err) ->
-            #     console.log('User is not logged in.');
 
             # if NativeStorage.getItem('user')
             #     console.log('User is logged in.');
