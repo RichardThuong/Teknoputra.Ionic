@@ -173,9 +173,9 @@ app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $i
             $rootScope.appLoaded = true;
             # For web debug
             if !ionic.Platform.isWebView()
-                $translate.use $WPHCLanguage.getLocale()
+                $translate.use $WPHCLanguage.getLocale();
             else
-                $cordovaSplashscreen.hide()
+                $cordovaSplashscreen.hide();
                 
             # Redirect to login screen if user have not logged in
             if !$AuthService.isUserLoggedIn()

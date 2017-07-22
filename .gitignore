@@ -11,3 +11,7 @@ node_modules/
 *.tmp
 *.tmp.*
 log.txt
+
+.DS_Store
+
+resources/.DS_Store
