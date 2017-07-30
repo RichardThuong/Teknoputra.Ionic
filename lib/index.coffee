@@ -130,8 +130,16 @@ app.config ($WPHCConfig, $compileProvider) ->
 ###
 MAIN CONTROLLER
 ###
-app.controller 'WPHCMainController' , ($log, $WPHCConfig) ->
+app.controller 'WPHCMainController' , ($log, $scope, $state, $WPHCConfig, $ionicTabsDelegate) ->
     $log.info 'main controller'
+
+    $scope.selectTabWithIndex = (index) ->
+        $ionicTabsDelegate.select(index)
+        switch index
+            when 0 then $state.go("public.taxonomies.id", { term: 'categories', id: 25, postType: 'post', title: 'Home' })
+            when 1 then $state.go("public.taxonomies.id", { term: 'categories', id: 26, postType: 'post', title: 'About Us' })
+            when 2 then $state.go("public.taxonomies.id", { term: 'categories', id: 29, postType: 'post', title: 'Contact' })
+
 
     vm = @
     vm.exposeAsideWhen = _.get($WPHCConfig, 'menu.exposeAsideWhen') || 'large'

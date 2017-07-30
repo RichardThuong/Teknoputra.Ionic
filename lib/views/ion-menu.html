@@ -1,6 +1,6 @@
 <ion-side-menus enable-menu-with-back-views="true">
     <ion-side-menu-content ng-if="::appLoaded">
-        <ion-nav-bar class="bar-positive">
+        <ion-nav-bar class="bar-positive hidden-bar">
             <ion-nav-back-button></ion-nav-back-button>
             <ion-nav-buttons side="left">
                 <button menu-toggle="left" class="button button-clear" wphc-hide-when="{{main.exposeAsideWhen}}">
@@ -13,6 +13,24 @@
                 </button>
             </ion-nav-buttons>
         </ion-nav-bar>
+        <ion-tabs class="tabs-icon-top tabs-positive">
+
+            <ion-tab title="Home" icon="ion-home" ng-click="selectTabWithIndex(0)">
+                <ion-nav-view name="home-tab"></ion-nav-view>
+                <!-- <ion-nav-view name="content "></ion-nav-view>  -->
+            </ion-tab>
+
+            <ion-tab title="About " icon="ion-information " ng-click="selectTabWithIndex(1)">
+                <ion-nav-view name="about-tab"></ion-nav-view>
+                <!-- <ion-nav-view name="content "></ion-nav-view>  -->
+            </ion-tab>
+
+            <ion-tab title="Contact " icon="ion-chatboxes " ng-click="selectTabWithIndex(2)">
+                <ion-nav-view name="contact-tab"></ion-nav-view>
+                <!-- <ion-nav-view name="content "></ion-nav-view> -->
+            </ion-tab>
+
+        </ion-tabs>
         <ion-nav-view name="content"></ion-nav-view>
     </ion-side-menu-content>
     <ion-side-menu ng-if="::appLoaded" expose-aside-when="{{main.exposeAsideWhen}}" ui-view="menu" side="left">
