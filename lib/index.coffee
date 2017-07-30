@@ -10,7 +10,8 @@ require './font/font.coffee'
 require 'expose?_!lodash'
 require 'wp-api-angularjs'
 require './config.js'
-require "./service-worker.js";
+require './service-worker.js'
+require 'ngStorage';
 overwriteModule = require '../config/index.js'
 customPostsModule = require './customPosts/index.js'
 pagesModule = require './pages/index.js'
@@ -32,7 +33,6 @@ loginModule = require './login/index.js'
 authService = require './auth/index.js'
 facebookService = require './facebook/index.js'
 toastModule = require './toastNotification/index.js'
-ngStorage = require 'ngstorage/ngStorage.js'
 
 # Style entry point
 require './scss/bootstrap'
@@ -184,13 +184,6 @@ app.run ($rootScope, $log, $WPHCConfig, $translate, $document, $WPHCLanguage, $i
             else
                 console.log('User is logged in.');
                 $state.go("public.taxonomies.id", { term: 'categories', id: 25, postType: 'post', title: 'Home' }, {reload: true});
-
-            # if NativeStorage.getItem('user')
-            #     console.log('User is logged in.');
-            #     console.log(NativeStorage.getItem('user'))
-            #     $state.go("public.taxonomies.id", { term: 'categories', id: 25, postType: 'post', title: 'Home' }, {reload: true})
-            # else
-            #     $state.go("public.login", {}, {reload: true})
 
     # Clean up appLoading
     # angular.element(document.querySelector 'html').removeClass 'app-loading'

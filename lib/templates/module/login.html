@@ -1,22 +1,28 @@
 <ion-view view-title="Login" hide-nav-bar="true">
+    <!-- <ion-content overflow-scroll="false"> -->
     <ion-content>
-        <div class="pageTitle"><img ng-src="img/AppLogo.png" style="width: 100%" /></div>
-        
-        <form ng-submit="doLogin(user)">
-            <div class="list">
-                <label class="item item-input">
-                    <input type="text" placeholder="Email" ng-model="user.email">
-                </label>
-                <label class="item item-input">
-                    <input type="password" placeholder="Password" ng-model="user.password">
-                </label>
+        <div style="position:absolute">
+            <div style="height:100%">
+                <div class="pageTitle"><img ng-src="img/AppLogo.png" style="width: 100%" /></div>
+                <div class="smallTitle">Login</div>
+
+                <form ng-submit="doLogin(user)">
+                    <div class="list">
+                        <label class="item item-input">
+                            <input type="text" placeholder="Email" ng-model="user.email">
+                        </label>
+                        <label class="item item-input">
+                            <input type="password" placeholder="Password" ng-model="user.password">
+                        </label>
+                    </div>
+                    <div class="padding">
+                        <button type="submit" class="button button-block button-positive">Login</button>
+                        <a class="button button-block facebook-login-button icon-left ion-social-facebook" ng-click="loginWithFacebook()">Login With Facebook</a>
+                        <!--<a class="button button-block google-login-button icon-left ion-social-google" ng-click="loginWithGoogle()">Login With Google</button>-->
+                        <a class="button button-block" ng-click="goSignup()">Signup New Account</a>
+                    </div>
+                </form>
             </div>
-            <div class="padding">
-                <button type="submit" class="button button-block button-positive">Login</button>
-                <a class="button button-block facebook-login-button icon-left ion-social-facebook" ng-click="loginWithFacebook()">Login With Facebook</a>
-                <!--<a class="button button-block google-login-button icon-left ion-social-google" ng-click="loginWithGoogle()">Login With Google</button>-->
-                <a class="button button-block" ng-click="goSignup()">Signup New Account</a>
-            </div>
-        <form>
+        </div>
     </ion-content>
 </ion-view>

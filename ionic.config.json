@@ -1,4 +1,5 @@
 {
   "name": "Teknoputra.Ionic",
-  "app_id": "com.thuongnh.teknoputra"
+  "app_id": "com.thuongnh.teknoputra",
+  "type": "ionic-angular"
 }
