@@ -68,3 +68,15 @@ ion-header-bar {
 //         overflow: hidden;
 //     }
 // }
+
+.platform-android {
+    .tabs-content {
+        @extend .has-tabs-top;
+    }
+}
+
+.platform-ios {
+    .tabs-content {
+        @extend .has-tabs;
+    }
+}

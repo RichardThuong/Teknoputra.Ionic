@@ -33,6 +33,7 @@ loginModule = require './login/index.js'
 authService = require './auth/index.js'
 facebookService = require './facebook/index.js'
 toastModule = require './toastNotification/index.js'
+menuTabModule = require './menuTab/index.js'
 
 # Style entry point
 require './scss/bootstrap'
@@ -72,6 +73,7 @@ module.exports = app = angular.module 'Teknoputra.Ionic', [
     authService
     facebookService
     toastModule
+    menuTabModule
 ]
 
 app.config ($stateProvider, $urlRouterProvider) ->
@@ -139,7 +141,8 @@ app.controller 'WPHCMainController' , ($log, $scope, $state, $WPHCConfig, $ionic
             when 0 then $state.go("public.taxonomies.id", { term: 'categories', id: 25, postType: 'post', title: 'Home' })
             when 1 then $state.go("public.taxonomies.id", { term: 'categories', id: 26, postType: 'post', title: 'About Us' })
             when 2 then $state.go("public.taxonomies.id", { term: 'categories', id: 29, postType: 'post', title: 'Contact' })
-
+            when 3 then $state.go("public.bookmarks")
+            when 4 then $state.go("public.menu")
 
     vm = @
     vm.exposeAsideWhen = _.get($WPHCConfig, 'menu.exposeAsideWhen') || 'large'

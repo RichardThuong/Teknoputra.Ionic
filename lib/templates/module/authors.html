@@ -1,6 +1,6 @@
 <ion-view>
     <ion-nav-title ng-bind-html="authorsCtrl.title | translate"></ion-nav-title>
-    <ion-content>
+    <ion-content class="tabs-content">
         <wphc-empty-list list="authorsCtrl.list"></wphc-empty-list>
         <wphc-loader ng-if="!authorsCtrl.list" on-load="authorsCtrl.init()"></wphc-loader>
         <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="authorsCtrl.refresh()"></ion-refresher>

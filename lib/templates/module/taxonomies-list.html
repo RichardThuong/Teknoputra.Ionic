@@ -1,6 +1,6 @@
 <ion-view>
     <ion-nav-title ng-bind-html="taxonomiesCtrl.title | translate"></ion-nav-title>
-    <ion-content>
+    <ion-content class="tabs-content">
         <wphc-empty-list list="taxonomiesCtrl.list"></wphc-empty-list>
         <wphc-loader ng-if="!taxonomiesCtrl.list" on-load="taxonomiesCtrl.init()"></wphc-loader>
         <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="taxonomiesCtrl.refresh()"></ion-refresher>

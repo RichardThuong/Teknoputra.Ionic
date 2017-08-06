@@ -1,6 +1,6 @@
 <ion-view>
     <ion-nav-title ng-bind-html="'bookmark.title' | translate"></ion-nav-title>
-    <ion-content class="wphc-bookmark">
+    <ion-content class="wphc-bookmark tabs-content">
         <wphc-empty-list list="bookmarkCtrl.posts" text="bookmark.emptyList" icon="ion-bookmark"></wphc-empty-list>
         <wphc-loader ng-if="!bookmarkCtrl.posts"></wphc-loader>
         <div class="list">

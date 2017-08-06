@@ -1,6 +1,6 @@
 <ion-view>
     <ion-nav-title ng-bind-html="pagesCtrl.title | translate"></ion-nav-title>
-    <ion-content class="padding bg-gray-lighter">
+    <ion-content class="padding bg-gray-lighter tabs-content">
         <wphc-empty-list list="pagesCtrl.list"></wphc-empty-list>
         <wphc-loader ng-if="!pagesCtrl.list" on-load="pagesCtrl.init()"></wphc-loader>
         <ion-refresher pulling-text="{{ 'pullToRefresh' | translate}}" on-refresh="pagesCtrl.refresh()"></ion-refresher>

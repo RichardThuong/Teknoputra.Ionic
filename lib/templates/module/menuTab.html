@@ -1,0 +1,19 @@
+<ion-view view-title="Menu" hide-nav-bar="true">
+    <ion-content class="tabs-content">
+        <div class="list card">
+            <div class="item">
+                <h2>{{user.displayName}}</h2>
+                <p>{{user.email}}</p>
+            </div>
+            <div class="item item-image">
+                <img class="circular--square" ng-src="{{user.avatarURL}}" />
+            </div>
+        </div>
+        <div class="padding">
+            <a class="button button-block" ng-click="myAccount()">My Account</a>
+            <a class="button button-block" ng-click="goToHomePage()">Go to Teknoputra home page</a>
+            <a class="button button-block" ng-click="settings()">Settings</a>
+            <a class="button button-block" ng-click="logout()">Logout</a>
+        </div>
+    </ion-content>
+</ion-view>
